@@ -13,7 +13,6 @@ const DarkModeSwitch = () => {
 
   if (!mounted) return null;
   const currentTheme = theme === "system" ? systemTheme : theme;
-  console.log(currentTheme);
   return <div>{currentTheme === "dark" ? <MdLightMode onClick={() => setTheme("light")} className="cursor-pointer" /> : <MdDarkMode onClick={() => setTheme("dark")} className="cursor-pointer" />}</div>;
 };
 
